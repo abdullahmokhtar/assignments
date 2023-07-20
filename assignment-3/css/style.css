@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: #fec260;
+}
+
+body {
+  background-color: #f7ecde;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  font-size: 3.125rem;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+h1::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 10%;
+  background-color: #fec260;
+  transition: height 0.3s;
+}
+
+h1:hover::before {
+  height: 55%;
+}
+
+.bookmark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: dotted 2px #000;
+  border-right: none;
+  border-left: none;
+}
+
+label{
+  align-self: start;
+}
+
+h2 {
+  font-family: 'Righteous', cursive;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: fit-content;
+}
+
+th {
+  text-transform: capitalize;
+}
+
+.visitbtn{
+  color: #fff;
+  background-color: #9eb23b;
+}
+
+.visitbtn:hover{
+  color: #fff;
+  background-color: #8a9e23;
+}
+
+.swal-modal {
+  width: 40%;
+  text-align: left;
+}
+
+.swal-content i {
+  color: #bb4120;
+}
+
+.swal-content li {
+  font-size: 18px;
+}
+
+div span{
+  width: 20px;
+  height: 20px;
+  background-color: #febe2e;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+div span:first-child{
+  background-color: #f15f5d;
+}
+
+div span:last-child{
+  background-color: #4db748;
+}
