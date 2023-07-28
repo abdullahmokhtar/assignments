@@ -1,0 +1,25 @@
+body {
+    background-color: #24353F;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+    color: #17a2b8;
+}
+
+div div {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+input{
+    background-color: #24353F !important;
+    color: #fff !important;
+}
+
+input::placeholder{
+    color: #fff !important;
+}
+
+.navbar{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);;
+}
