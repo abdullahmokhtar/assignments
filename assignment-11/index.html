@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg shadow">
+        <div class="container p-4">
+          <a class="navbar-brand" href="#"
+            ><div>
+              <div class="row align-items-center">
+                <div class="col-md-3">
+                  <img src="images/logo@2x.png" class="w-100" alt="" />
+                </div>
+                <div class="col-md-5">
+                  <h6>Weather</h6>
+                  <p>tagline goes here</p>
+                </div>
+              </div>
+            </div></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link">Live Camera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <form class="py-5 d-flex">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Find Your Location..."
+            id="search"
+          />
+          <input
+            type="button"
+            class="btn btn-success"
+            value="Find"
+            id="submit"
+          />
+        </form>
+        <div class="row" id="weather-Cards"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form class="d-flex">
+              <input
+                type="email"
+                placeholder="Enter Your email to subscribe..."
+                class="form-control"
+              />
+              <input type="button" value="Subscribe" class="btn btn-success" />
+            </form>
+          </div>
+          <div class="ms-auto col-md-2">
+            <div class="icons d-flex">
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-google"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+            </div>
+          </div>
+          <div class="my-3">
+            <p>
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
