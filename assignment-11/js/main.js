@@ -9,7 +9,6 @@ const fetchData = async (city = "Cairo") => {
 
   if (response.ok) {
     const responseData = await response.json();
-    console.log(responseData);
     const weekday = [
       "Sunday",
       "Monday",
@@ -36,7 +35,6 @@ const fetchData = async (city = "Cairo") => {
     ];
 
     const d = new Date(responseData.location.localtime);
-    console.log(d.getDate(), d.getMonth());
     let weatherData = `<div class="p-0 pb-4 col-md-4">
             <div class="weather-card text-white">
               <div class="card-heading d-flex justify-content-between rounded-2">
@@ -81,7 +79,9 @@ const fetchData = async (city = "Cairo") => {
                 <h4 class="fw-bold">${
                   responseData.forecast.forecastday[i].day.mintemp_c
                 }<sup>o</sup>C</h4>
-                <h6 class="mt-3">${responseData.forecast.forecastday[i].day.condition.text}</h6>
+                <h6 class="mt-3">${
+                  responseData.forecast.forecastday[i].day.condition.text
+                }</h6>
               </div>
             </div>
           </div>
