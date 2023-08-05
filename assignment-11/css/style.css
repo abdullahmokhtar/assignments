@@ -41,11 +41,11 @@ header .navbar {
   transition: 0.3s ease;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   color: #fff;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover {
   border-color: #009ad8;
   color: #009ad8;
 }
@@ -87,6 +87,11 @@ main {
   padding-bottom: 50px;
 }
 
+form div {
+  position: relative;
+  width: 100%;
+}
+
 input:first-child {
   border-radius: 30px;
   padding: 20px 10px;
@@ -95,12 +100,20 @@ input:first-child {
   border-color: #1e202b;
 }
 
+input:first-child:focus{
+  background-color: #1e202b;
+  color: #fff;
+}
+
 input:first-child::placeholder {
   padding-left: 10px;
   color: #fff;
 }
 
 input:last-child {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
   border-radius: 30px;
   padding: 10px 20px;
   margin-left: -4.5%;
@@ -112,21 +125,20 @@ input:last-child {
   border-bottom-left-radius: 5px;
 }
 
-.col-md-4{
+.col-md-4 {
   background-color: #262936;
 }
 
-.col-md-4:last-child{
+.col-md-4:last-child {
   background-color: #323544;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-
 .card-heading {
   padding: 10px;
   width: 100%;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #bfc1c8;
 }
 
@@ -135,26 +147,26 @@ input:last-child {
   font-size: 18px;
 }
 
-.col-md-4:first-child .card-content h4{
+.col-md-4:first-child .card-content h4 {
   font-size: 90px;
   font-weight: bold;
 }
 
-.card-content h6{
+.card-content h6 {
   color: #009ad8;
   font-size: 14px;
 }
 
-.card-footer span{
+.card-footer span {
   margin-left: 10px;
 }
 
-.card-content h4:last-of-type{
+.card-content h4:last-of-type {
   color: #bfc1c8;
   font-size: 16px;
 }
 
-footer{
+footer {
   padding: 60px 0 20px;
   background-color: #262936;
 }
@@ -171,7 +183,7 @@ footer{
   transition: 0.3s ease;
 }
 
-.icons div:hover{
+.icons div:hover {
   background-color: #009ad8;
 }
 

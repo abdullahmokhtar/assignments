@@ -3,10 +3,12 @@ const logoutElement = document.querySelector(".nav-link");
 
 const users = JSON.parse(localStorage.getItem("users"));
 
-welcomeElement.innerHTML =
+const welcomeMessage =
   "Welcome " + users[localStorage.getItem("LogedinUserIndex")].name;
 
-  logoutElement.addEventListener("click", ()=>{
-    localStorage.removeItem("LogedinUserIndex");
-    window.location.href= "/index.html";
-  })
+welcomeElement.innerHTML = welcomeMessage;
+
+logoutElement.addEventListener("click", () => {
+  localStorage.removeItem("LogedinUserIndex");
+  window.location.href = "/index.html";
+});
