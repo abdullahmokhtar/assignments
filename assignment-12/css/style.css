@@ -1,0 +1,157 @@
+/* general rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+#home {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url("../images/events-heavenly-header.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+#home h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.menu {
+  width: 20%;
+  height: 100%;
+  background-color: #111;
+  position: fixed;
+  left: -20%;
+  /* display: none; */
+}
+
+.menu ul {
+  padding: 100px;
+}
+
+.menu li:first-child {
+  text-align: right;
+}
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu li a:hover {
+  color: rgb(117, 12, 12);
+}
+
+.menu a {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#home span {
+  cursor: pointer;
+}
+/* singer slider */
+.singer-slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.singer-slider h3 {
+  background-color: rgba(214, 46, 51, 0.6);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  margin: 0;
+}
+
+.singer-slider p {
+  background-color: #ccc;
+  padding: 10px;
+  margin: 0;
+  display: none;
+}
+
+.singer-slider p:first-of-type {
+  display: block;
+}
+
+.demo {
+  /* width: 300px; */
+  height: 300px;
+  background-color: tomato;
+  display: none;
+}
+/* duration section */
+#duration {
+  margin: 100px 0;
+  padding: 100px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url("../images/invitation-2508607__340.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.time {
+  font-size: 30px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #444;
+  text-transform: uppercase;
+}
+
+footer p {
+  color: #777;
+  font-weight: 300;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.social i {
+  padding: 10px;
+  border: 2px solid #00000051;
+  margin-right: 10px;
+  color: #444;
+}
+
+.social i:hover {
+  background-color: rgb(172, 15, 15);
+  border-color: rgb(172, 15, 15);
+  color: #fff;
+}
+
+footer textarea {
+  height: 10rem;
+}

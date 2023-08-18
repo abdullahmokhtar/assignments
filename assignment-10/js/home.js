@@ -6,7 +6,7 @@ const users = JSON.parse(localStorage.getItem("users"));
 const welcomeMessage =
   "Welcome " + users[localStorage.getItem("LogedinUserIndex")].name;
 
-welcomeElement.innerHTML = welcomeMessage;
+welcomeElement.textContent = welcomeMessage;
 
 logoutElement.addEventListener("click", () => {
   localStorage.removeItem("LogedinUserIndex");
